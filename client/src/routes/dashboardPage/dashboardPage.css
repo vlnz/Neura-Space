@@ -1,0 +1,140 @@
+.dashboardPage {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #181824 0%, #23243a 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.texts {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  opacity: 1;
+}
+
+.logo img {
+  width: 56px;
+  height: 56px;
+  filter: drop-shadow(0 2px 8px #217bfe44);
+}
+
+.logo h1 {
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #217bfe 30%, #e55571 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: -1px;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.option {
+  flex: 1;
+  min-width: 160px;
+  background: #23243a;
+  border: 1px solid #36374a;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #0002;
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: #ececec;
+  transition: border 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.option:hover {
+  border: 1.5px solid #217bfe;
+  box-shadow: 0 4px 24px #217bfe22;
+}
+
+.option img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  filter: brightness(1.2);
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 700px;
+  background: #23243a;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #0003;
+  margin: 0 0 32px 0;
+  padding: 0 0 8px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 24px 10px 24px;
+}
+
+form input {
+  flex: 1;
+  padding: 16px 18px;
+  background: #181824;
+  border: 1px solid #36374a;
+  border-radius: 12px;
+  color: #ececec;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+form input:focus {
+  border: 1.5px solid #217bfe;
+}
+
+form button {
+  background: linear-gradient(135deg, #217bfe 60%, #e55571 100%);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #217bfe33;
+}
+
+form button:hover {
+  background: linear-gradient(135deg, #217bfe 80%, #e55571 100%);
+  box-shadow: 0 4px 16px #217bfe44;
+}
+
+form button img {
+  width: 18px;
+  height: 18px;
+  filter: brightness(2);
+}

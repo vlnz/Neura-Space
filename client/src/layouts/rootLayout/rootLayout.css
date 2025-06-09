@@ -1,0 +1,30 @@
+.rootLayout {
+  padding: 16px 64px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #181824 0%, #23243a 100%);
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      gap: 5px;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  main {
+    flex: 1;
+    overflow: hidden;
+  }
+}
